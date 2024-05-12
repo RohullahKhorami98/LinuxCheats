@@ -8,3 +8,7 @@ xset s off
 
 # set and unset a terminal as default terminal
 chsh -s $(which bash)
+
+
+#set Layout
+setxkbmap -layout se
