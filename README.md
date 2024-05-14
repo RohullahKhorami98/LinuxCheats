@@ -36,21 +36,6 @@ Save output as a file: <pre>docker info &> filename</pre>
 * List all users: <pre>cut -d: -f1 /etc/passwd</pre>
 * All users: <pre>awk -F: '{print}' /etc/passwd | head</pre>
 * Shared with Windows: <pre>sudo vmhgfs-fuse .host:/ /path/to/SHARED -o allow_other -o uid=1000</pre>
-* Running container from .json:
-
-```json
-{
-    "Image": "image:tag",
-    "name": "datetime",
-    "Tty": true,
-    "HostConfig": {
-        "NetworkMode": "host",
-        "Privileged": true,
-        "Init": true
-    }
-}
-```
-
 ## Keyboard and Terminal
 1. This changes the layout of keyboard
 <pre>setxkbmap se</pre>
