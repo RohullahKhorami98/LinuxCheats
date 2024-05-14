@@ -10,7 +10,7 @@ Implementing Linux commands
 1. Securely copy a file: <pre>scp file.format user@ip_address:/path/to/save</pre>
 2. Securely copy a directory: <pre>scp -r -oHostKeyAlgorithms=+ssh-rsa /PATH/TO/Directory user@IP_ADDRESS:/path/to/save/dockeruser</pre>
 
-## Docker Installation on VM
+## Docker Installation on Linux
 1. <pre>sudo snap refresh</pre>
 2. <pre>sudo snap install docker</pre>
 3. <pre>sudo docker buildx</pre>
