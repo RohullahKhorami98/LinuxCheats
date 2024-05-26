@@ -61,3 +61,10 @@ l1,l2,l3...ln = language 1, language 2, language 3, language n
 ## Installing .deb 
 1. Using dpkg: <pre>sudo dpkg -i program.deb</pre>
 2. If any issue with dependencies: <pre> sudo apt-get install -f</pre>
+
+
+## System boot time
+1. <pre> who -b</pre>
+2. <pre>uptime</pre>
+3. <pre>top</pre>
+4. <pre>cat /proc/uptime</pre> This one is in milliseconds
