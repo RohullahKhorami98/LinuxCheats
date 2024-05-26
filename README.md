@@ -52,3 +52,8 @@ l1,l2,l3...ln = language 1, language 2, language 3, language n
 2. Changing The terminal in vscode
     1. press f1 
     2. Select --> Terminal: Select default Profile
+
+
+## Finding a specific file in Linux
+1. Using dpkg: <code>dpkg -l | grep -i < package-name></code>
+2. Using apt:<code>apt list --installed | grep -i < package-name></code>
