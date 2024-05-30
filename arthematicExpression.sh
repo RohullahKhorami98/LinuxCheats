@@ -9,22 +9,21 @@
 #################################################################
 
 getNinputs(){
+
     read N
 
-    nn=$(echo "$N" | awk '{print int($1)}')
+    if [ "$N" -ge 1 ] && [ "$N" -le 500 ]; then
+        result=0
 
-    result=0
+        for ((i = 0; i < N; i++)); do
+            read temp
+            result=$(echo "scale=3; $result + $temp" | bc -l)
+        done
 
-    for ((i = 0; i <nn; i++)); do
-        read temp
-        temp1=$(echo "$temp" | awk '{print int($1)}')
-        result=$((result + temp1))
-    done
+        final=$(echo "scale=3; $result / $N" | bc -l)
+        printf "%.3f\n" "$final"
+    fi
 
-
-    final=$(echo "scale=3; $result / $nn" | bc -l)
-    formatedOutput=$(printf "%.3f" "$final")
-    echo "$formatedOutput"
 }
 expression(){
     read math
