@@ -32,7 +32,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 #exec --no-startup-id setxkbmap se
 # Sets wallpaper
 exec_always feh --bg-fill ~/Pictures/Gtr.jpg
-exec "setxkbmap se"
+exec_always --no-startup-id setxkbmap se
 #exec "setxkbmap -option 'grp:alt_shift_toggle'"
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -69,7 +69,7 @@ bindsym $mod+odiaeresis focus right
 
 
 #Private keys 
-bindsym $mod+w exec google-chrome
+bindsym $mod+w exec firefox
 bindsym $mod+x exec i3lock --image ~/Pictures/gtr.png
 bindsym $mod+Shift+Return exec nautilus
 bindsym $mod+Shift+t exec gnome-control-center
